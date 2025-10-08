@@ -1,0 +1,212 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>H.T. — Wirtschaftsingenieurwesen Studentin</title>
+  <meta name="description" content="Homepage von H.T., Studentin des Wirtschaftsingenieurwesens. Sportlich aktiv, Projekte, Skills und Kontakt." />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;700&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    :root{
+      --bg: #fffaf6;
+      --accent: #ff8ba7; /* warm pink */
+      --accent-2: #ffd9e6; /* pale pink */
+      --text: #2b2b2b;
+      --muted: #666;
+      --card: #ffffff;
+      --shadow: 0 6px 18px rgba(43,43,43,0.06);
+      --radius: 18px;
+    }
+    *{box-sizing:border-box}
+    body{font-family:Montserrat, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial; margin:0; background:linear-gradient(180deg, var(--bg), #fff); color:var(--text);}
+    header{background: linear-gradient(120deg, rgba(255,140,167,0.08), rgba(255,217,230,0.06)); padding:48px 20px 28px; position:relative; overflow:hidden}
+    .container{max-width:1100px; margin:0 auto;}
+
+    /* floral corner */
+    .flower{position:absolute; right:4%; top:6%; width:220px; opacity:0.95; transform:rotate(-10deg);}
+
+    .hero{display:grid; grid-template-columns:1fr 380px; gap:28px; align-items:center}
+    .hero-left h1{font-family:'Playfair Display', serif; font-size:42px; margin:0 0 8px;}
+    .role{color:var(--muted); margin-bottom:18px}
+    .intro{background:var(--card); padding:18px; border-radius:14px; box-shadow:var(--shadow)}
+    .cta{display:flex; gap:12px; margin-top:18px}
+    .btn{display:inline-block; padding:10px 16px; border-radius:12px; text-decoration:none; font-weight:600}
+    .btn-primary{background:var(--accent); color:white}
+    .btn-outline{background:transparent; border:1px solid rgba(43,43,43,0.06); color:var(--text)}
+
+    /* right card */
+    .card{background:linear-gradient(180deg, #fff, var(--accent-2)); padding:20px; border-radius:18px; box-shadow:var(--shadow)}
+    .avatar{height:96px; width:96px; border-radius:50%; background:linear-gradient(135deg,#ffd9e6, #fff); display:flex; align-items:center; justify-content:center; font-weight:700; font-size:24px}
+    .contact{margin-top:12px; font-size:14px}
+    .contact a{color:var(--accent); text-decoration:none; font-weight:600}
+
+    main{padding:36px 20px}
+    .grid{display:grid; grid-template-columns:1fr 340px; gap:24px; max-width:1100px; margin:0 auto}
+
+    .card-section{background:var(--card); padding:20px; border-radius:14px; box-shadow:var(--shadow)}
+    h2{margin:0 0 12px; font-size:20px}
+    p.lead{color:var(--muted); margin:0 0 14px}
+
+    .skills{display:flex; gap:8px; flex-wrap:wrap}
+    .skill{background:var(--accent-2); padding:8px 10px; border-radius:999px; font-size:13px}
+
+    .projects{display:grid; gap:12px}
+    .project{padding:12px; border-radius:12px; background:linear-gradient(180deg,#fff,#fffaf0); border:1px solid rgba(0,0,0,0.03)}
+    .project h3{margin:0 0 6px; font-size:16px}
+    .project p{margin:0; color:var(--muted); font-size:14px}
+
+    aside .card-section{position:sticky; top:24px}
+    .hobby{display:flex; gap:12px; align-items:center}
+    .hobby svg{width:44px;height:44px}
+
+    footer{padding:28px 20px; text-align:center; color:var(--muted); font-size:14px}
+
+    /* Responsive */
+    @media (max-width:920px){
+      .hero{grid-template-columns:1fr;}
+      .grid{grid-template-columns:1fr}
+      .flower{display:none}
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container hero">
+      <div class="hero-left">
+        <h1>H.T.</h1>
+        <div class="role">Studentin des Wirtschaftsingenieurwesens • technisch & wirtschaftlich denkend</div>
+        <div class="intro">
+          <p class="lead">Hallo! Ich bin H.T., Studentin am Bereich Wirtschaftsingenieurwesen. Ich verknüpfe technische Zusammenhänge mit wirtschaftlichen Lösungen und interessiere mich besonders für Prozessoptimierung, Projektmanagement und Datenanalyse.</p>
+          <div class="cta">
+            <a class="btn btn-primary" href="mailto:h.t9999@gmail.com">E‑Mail schreiben</a>
+            <a class="btn btn-outline" href="#about">Mehr über mich</a>
+          </div>
+        </div>
+      </div>
+
+      <div>
+        <div class="card">
+          <div style="display:flex; gap:12px; align-items:center">
+            <div class="avatar">H.T.</div>
+            <div>
+              <div style="font-weight:700">H.T.</div>
+              <div class="contact">Wirtschaftsingenieurwesen Studentin<br><a href="mailto:h.t9999@gmail.com">h.t9999@gmail.com</a></div>
+            </div>
+          </div>
+
+          <div style="margin-top:16px; display:flex; gap:10px; flex-wrap:wrap">
+            <div style="padding:8px 10px; border-radius:10px; background:#fff; font-weight:600">Im Studium</div>
+            <div style="padding:8px 10px; border-radius:10px;">Prozessoptimierung</div>
+            <div style="padding:8px 10px; border-radius:10px;">Datenanalyse</div>
+          </div>
+
+          <div style="margin-top:14px; font-size:14px; color:var(--muted)">Sportlich aktiv • Teamplayerin • Organisationstalent</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- decorative floral SVG -->
+    <svg class="flower" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg" aria-hidden>
+      <defs>
+        <linearGradient id="g1" x1="0" x2="1" y1="0" y2="1">
+          <stop offset="0" stop-color="#ffd9e6" />
+          <stop offset="1" stop-color="#ff8ba7" />
+        </linearGradient>
+      </defs>
+      <g transform="translate(20,10)">
+        <circle cx="30" cy="30" r="24" fill="url(#g1)" opacity="0.95" />
+        <g transform="translate(60,20)">
+          <path d="M10 30 C 20 5, 60 5, 70 30 C 80 55, 40 85, 10 30" fill="#fff7f9" opacity="0.7" stroke="#ff8ba7"/>
+        </g>
+        <path d="M40 80 C 50 110, 90 110, 100 80" stroke="#ff8ba7" stroke-width="3" fill="none"/>
+      </g>
+    </svg>
+  </header>
+
+  <main>
+    <div class="grid">
+      <section>
+        <div id="about" class="card-section">
+          <h2>Über mich</h2>
+          <p class="lead">Ich studiere Wirtschaftsingenieurwesen und kombiniert technisches Verständnis mit betriebswirtschaftlichem Denken. In meinem Studium habe ich bisher Erfahrungen in Lean Management, Projektplanung und Grundlagen der Datenanalyse gesammelt.</p>
+
+          <h2 style="margin-top:18px">Skills</h2>
+          <div class="skills">
+            <div class="skill">Excel & Pivot</div>
+            <div class="skill">Grundlagen Python</div>
+            <div class="skill">Projektmanagement</div>
+            <div class="skill">Lean / Six Sigma (Grundlagen)</div>
+            <div class="skill">Datenanalyse</div>
+            <div class="skill">Teamwork</div>
+          </div>
+        </div>
+
+        <div class="card-section" style="margin-top:18px">
+          <h2>Projekte & Erfahrung</h2>
+          <div class="projects">
+            <article class="project">
+              <h3>Prozessoptimierung — Uni Projekt</h3>
+              <p>Analyse eines Produktionsprozesses, Identifikation von Engpässen und Vorschlag für Verbesserungen mit einfacher Implementierungsplanung.</p>
+            </article>
+
+            <article class="project">
+              <h3>Teamprojekt: Markteintritts-Analyse</h3>
+              <p>Wirtschaftliche Bewertung eines Markteintritts inkl. SWOT und grober Business Case.</p>
+            </article>
+          </div>
+        </div>
+
+        <div class="card-section" style="margin-top:18px">
+          <h2>Ausbildung</h2>
+          <p class="lead">Derzeitiges Studium: Bachelor Wirtschaftsingenieurwesen (laufend)</p>
+          <ul>
+            <li>Schwerpunkte: Prozessmanagement, Betriebswirtschaft, technische Grundlagen</li>
+            <li>Aktuelle Semester: (bitte bei Bedarf anpassen)</li>
+          </ul>
+        </div>
+      </section>
+
+      <aside>
+        <div class="card-section">
+          <h2>Kontakt</h2>
+          <p class="lead">Schreib mir eine E‑Mail oder verbinde dich: <br><a href="mailto:h.t9999@gmail.com">h.t9999@gmail.com</a></p>
+
+          <h2 style="margin-top:16px">Hobbys</h2>
+          <div class="hobby">
+            <svg viewBox="0 0 24 24" aria-hidden>
+              <path d="M12 2a5 5 0 0 0-5 5c0 4 5 9 5 9s5-5 5-9a5 5 0 0 0-5-5z" fill="none" stroke="#ff8ba7" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+            </svg>
+            <div>
+              <div style="font-weight:700">Sportlich aktiv</div>
+              <div style="color:var(--muted); font-size:14px">Laufen, Fitness & Teamsport</div>
+            </div>
+          </div>
+
+          <h2 style="margin-top:16px">Download</h2>
+          <p class="lead">Lebenslauf / Portfolio (PDF) — <a href="#" onclick="alert('PDF hier hinterlegen oder Link ergänzen')">Download</a></p>
+
+          <h2 style="margin-top:16px">Kurz & bündig</h2>
+          <p style="color:var(--muted); font-size:14px">Technisch-affin, wirtschaftlich-orientiert und gerne aktiv im Team.</p>
+        </div>
+
+        <div style="height:18px"></div>
+      </aside>
+    </div>
+  </main>
+
+  <footer>
+    © H.T. • Studentin Wirtschaftsingenieurwesen • Kontakt: <a href="mailto:h.t9999@gmail.com">h.t9999@gmail.com</a>
+  </footer>
+
+  <script>
+    // Small enhancement: smooth scroll for internal links
+    document.querySelectorAll('a[href^="#"]').forEach(a=>{
+      a.addEventListener('click', e=>{
+        e.preventDefault();
+        const target = document.querySelector(a.getAttribute('href'));
+        if(target) target.scrollIntoView({behavior:'smooth', block:'start'});
+      })
+    })
+  </script>
+</body>
+</html>
